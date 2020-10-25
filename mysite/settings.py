@@ -25,7 +25,7 @@ SECRET_KEY = 'l#d)=k3^2f9^39&__hb26y@cf+p95jv#g=p67-5yf9a1gi-$1+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [u'wichit2s.pythonanywhere.com']
+ALLOWED_HOSTS = [u'beems43.pythonanywhere.com']
 
 
 # Application definition
@@ -99,7 +99,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
+LOGIN_REDIRECT_URL = 'index'
+LOGOUT_REDIRECT_URL ='login'
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/

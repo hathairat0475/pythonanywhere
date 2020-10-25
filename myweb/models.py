@@ -1,16 +1,27 @@
 from django.db import models
 
-class Question(models.Model):
-    question_text = models.CharField(max_length=200)
-    pub_date = models.DateTimeField('date published')
+class Name(models.Model):
+
+    id = models.AutoField(primary_key=True)
+
+    Name = models.IntegerField(default="ชื่อ")
 
     def __str__(self):
-        return f'{self.question_text}'
+        return f'{self.Name}'
 
-class Choice(models.Model):
-    question = models.ForeignKey(Question, on_delete=models.CASCADE)
-    choice_text = models.CharField(max_length=200)
-    votes = models.IntegerField(default=0)
+class FoodType(models.Model):
+    id = models.AutoField(primary_key=True)
+    Food_Type = models.CharField(max_length=100,default="ประเภทอาหาร")
 
     def __str__(self):
-        return f'{self.question.question_text} - {self.choice_text} - {self.votes}'
+        return f'{self.Food_Type}'
+
+class Food(models.Model):
+    Food_Name = models.CharField(max_length=100)
+    Price = models.IntegerField()
+
+    FoodType = models.ForeignKey(FoodType, on_delete=models.CASCADE)
+
+    def __str__(self):
+
+        return f'{self.Food_Name} - {self.FoodType} - {self.Name} - {self.Price}'

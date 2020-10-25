@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink  -  TastyYummy</title>
+     <link rel="icon" type="image/png" href="https://www.flaticon.com/svg/static/icons/svg/1285/1285289.svg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<style>
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ /* เปลี่ยนขนาดรูปภาพ */
+.hero-image {
+  background-color: #fdffd1;
+  height: 700%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #ffcff4;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #fff68f;
+  color: #333;
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="/index">Tasty Yummy</a>
+  <a class="nav-link" href="/index">Home <span class="sr-only"> </span></a>
+  <a href="/signup">Signup</a>
+  <a href="/">Login</a>
+  <a href="/logout">Logout</a>
+  <a href="/restaurant">Restaurant</a>
+  <p style="text-align:right">  สวัสดี! {{user}}</p>
+</div>
+<div class="hero-image">
+    <div class="container">
+  <br><div class="card"></br>
+    <center><div style="font-size:35px" class="card-body">รีวิวร้านเครื่องดื่ม</div></center>
+    <center><div style="font-size:25px" class="card-body"> Tiger Sugar Thailand</div></center>
+    <center><img src="https://cms.dmpcdn.com/travel/2020/03/27/b2d287d0-7039-11ea-a7cd-dd316e61efc7_original.jpg" alt="dropdown"></center>
+    <p style="font-size:20px" class="card-text"> <br>&nbsp;&nbsp;เริ่มต้นความนัวกันที่ร้านแรก สำหรับร้าน Tiger Sugar Thailand ร้านชานมไข่มุกสัญชาติไต้หวัน ใครที่อยากจะลอง บอกเลยว่าต้องรอคิวกันสักหน่อยนะจ๊ะ แต่ไม่ผิดหวังแน่นอน ชาหอมนัวนม รสชาติดีมากๆ เมนูแนะนำอย่าง Brown Sugar Boba Milk with Cream Mousse ถือเป็นซิกเนเจอร์ห้ามพลาด ใครที่เลิฟกลิ่นน้ำตาลทรายแดง และความหนึบนุ่มไข่มุก ต้องฟินแน่นอน</br>
+    <br> &nbsp;&nbsp;ที่อยู่ : The Market ราชประสงค์ เขตปทุมวัน กรุงเทพฯ</br>
+    <br> &nbsp;&nbsp;ร้านเปิดบริการ : 11.00-21.30 น.</br>
+    <br> <div class="card"> </br>
+    <center><div style="font-size:25px" class="card-body"> GAGA</div></center>
+    <center><img src="https://cms.dmpcdn.com/travel/2020/03/27/b1ddc790-7039-11ea-a7cd-dd316e61efc7_original.jpg" alt="dropdown"></center>
+    <p style="font-size:20px" style="font-size:20px" class="card-text"> <br>&nbsp;&nbsp;ใครที่มีโอกาสแวะเวียนกันไปฝั่งเซ็นทรัลเวิลด์ ก็ต้องห้ามพลาดร้าน GAGA ชานมไข่มุกเจ้าอร่อย ที่มีดีในเรื่องชา รสชาติของชานมที่นี่ถูกปากคนไทยอย่างทุกคนแน่นอนค่ะ เพราะทางร้านได้เดินทางไปค้นหาใบชาพรีเมี่ยมมาอย่างพิถีพิถัน รสชาติที่ได้มาจึงหอมหวานกำลังดี ยิ่งมาเจอกับไข่มุกเหนียวหนึบหนับสูตรลับของทางร้าน หื้มมมม ฟินมาก</br>
+    <br> &nbsp;&nbsp;ที่อยู่ : ชั้น 6 CentralwOrld แขวง/เขต ปทุมวัน กรุงเทพฯ (มีหลายสาขา)</br>
+    <br> &nbsp;&nbsp;ร้านเปิดบริการ : 10.00-22.00 น.</br>
+    <br> <div class="card"> </br>
+    <center><div style="font-size:25px" class="card-body"> Fire Tiger by Seoulcial Club</div></center>
+    <center><img src="https://cms.dmpcdn.com/travel/2020/03/27/b1c6bd20-7039-11ea-b8a2-09037777d4af_original.jpg" alt="dropdown"></center>
+    <p style="font-size:20px" class="card-text"> <br>&nbsp;&nbsp;อีกหนึ่งร้านที่กำลังมาแรงมากๆ ใจกลางย่านสยาม อย่างร้าน Fire Tiger by Seoulcial Club หรือที่ทุกคนคุ้นเคยกันในชื่อ ชานมเสือพ่นไฟ ก็น่าสนใจอยู่ไม่น้อยค่ะ บอกเลยว่าเมนูใหม่อย่างเมนู Fire Tiger Milk tea ดีงามพระราม 1 สุดๆ ! ทางร้านเลือกใช้นมสดแท้มาผสมกับ black sugar syrub ทำให้เราได้กลิ่นหอมน้ำตาลไหม้อ่อนๆ พร้อมด้วยไข่มุกหนึบหนับ เคี้ยวกันเพลินแน่นอนค่ะ และความพีคของร้านนี้คือ ใครอยากกินชานมไข่มุกตอนเที่ยงคืนก็จะได้กิน เพราะเค้าเปิดถึง ตี 1 กันเลยจ้าา เรียกได้ว่าเอาใจคนนอนดึกกันสุดๆ</br>
+    <br> &nbsp;&nbsp;ที่อยู่ : สยามสแควร์ ซอย 3 แขวง/เขตปทุมวัน กรุงเทพฯ (มีหลายสาขา)</br>
+    <br> &nbsp;&nbsp;ร้านเปิดบริการ : 10.00-01.00 น.</br>
+    <br> <div class="card"> </br>
+    <center><div style="font-size:25px" class="card-body"> BEARHOUSE</div></center>
+    <center><img src="https://cms.dmpcdn.com/travel/2020/03/30/c4e17470-723e-11ea-a7cd-dd316e61efc7_original.jpg" alt="dropdown"></center>
+    <p style="font-size:20px" class="card-text"> <br>&nbsp;&nbsp;BEARHOUSE เป็นอีกร้านชานมไข่มุกขวัญใจวัยรุ่นที่สามารถเลือกเครื่องดื่มได้เยอะ และความอร่อยไม่ธรรมดาเลยทีเดียวและความเด็ดของร้านนี้อยู่ที่ตัวไข่มุกโมจิ เคี้ยวหนึบ เนื้อนุ่ม ไม่เหมือนใคร พร้อมเลือกระดับความหวานได้ตามใจชอบ</br>
+    <br> &nbsp;&nbsp;ที่อยู่ : สยามสแควร์ ถ.อังรีดูนัง เขตปทุมวัน กรุงเทพฯ (มี 4 สาขา)</br>
+    <br> &nbsp;&nbsp;ร้านเปิดบริการ : 10.00-22.00 น.</br>
+
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
